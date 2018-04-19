@@ -27,11 +27,14 @@ dependencies {
 
 }
 
-test {
-    useTestNG {
-        suites 'src/main/resources/testng.xml'
+
+    test {
+        useTestNG() {
+            // runlist to executed. path is relative to current folder
+            suites 'src/test/java/testng.xml'
+        }
     }
-}
+
 
 // Resolve Maven dependencies as Maven does
 repositories {
