@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="sanity"  >
+    <listeners><listener class-name="com.automation.listeners.Listners"></listener></listeners>
+    <parameter name="city" value="Mumbai"></parameter>
+    <test name="sanity1">
+        <classes>
+            <class name="com.automation.testClass.FlightsTest">
+                <methods>
+                    <include name="test1"/>
+                    <include name="test2"/>
+                </methods>
+            </class>
+            <class name="com.automation.testClass.TestClass1">
+                <methods>
+                    <include name="test3"/>
+                    <include name="test4"/>
+                </methods>
+            </class>
+            <class name="com.automation.testClass.TestClass2">
+                <methods>
+                    <include name="test3"/>
+                    <include name="test4"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>

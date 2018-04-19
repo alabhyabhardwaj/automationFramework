@@ -1,0 +1,15 @@
+.gradle/
+.idea/
+build/
+out/
+src/test/java/com/comparatot/
+src/test/java/com/comparator/
+src/test/java/com/practises/
+*.png
+*.html
+
+        
+     
+
+
+
