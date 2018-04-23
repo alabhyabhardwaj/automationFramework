@@ -26,25 +26,26 @@ dependencies {
 
 
 }
-<<<<<<< HEAD
-//Added by me
-    test {
-        useTestNG() {
-            // runlist to executed. path is relative to current folder
-            suites 'src/test/java/testng.xml'
-        }
-=======
 
+//Added by me
 test {
     useTestNG() {
         // runlist to executed. path is relative to current folder
         suites 'src/test/java/testng.xml'
->>>>>>> 0ed5e0ae615fb274fa34740957fc4669b2bd830b
     }
-}
+
+
+    test {
+        useTestNG() {
+            // runlist to executed. path is relative to current folder
+            suites 'src/test/java/testng.xml'
+
+        }
+    }
 
 // Resolve Maven dependencies as Maven does
-repositories {
-    mavenCentral()
-    mavenLocal()
+    repositories {
+        mavenCentral()
+        mavenLocal()
+    }
 }
