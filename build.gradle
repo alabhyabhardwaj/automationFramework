@@ -26,8 +26,7 @@ dependencies {
 
 
 }
-
-
+//Added by me
     test {
         useTestNG() {
             // runlist to executed. path is relative to current folder
