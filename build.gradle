@@ -11,15 +11,15 @@ ext.seleniumVersion = '3.8.1'
 // Cf. Maven <dependencies>
 dependencies {
     compile group: 'junit', name: 'junit', version: junitVersion
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version:seleniumVersion
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version:seleniumVersion
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-api', version:seleniumVersion
-    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version:seleniumVersion
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-firefox-driver', version: seleniumVersion
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-chrome-driver', version: seleniumVersion
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-api', version: seleniumVersion
+    compile group: 'org.seleniumhq.selenium', name: 'selenium-java', version: seleniumVersion
     // https://mvnrepository.com/artifact/org.testng/testng
     testCompile group: 'org.testng', name: 'testng', version: '6.9.10'
     //https://mvnrepository.com/artifact/com.aventstack/extentreports
     compile group: 'com.aventstack', name: 'extentreports', version: '3.0.3'
-   //https://mvnrepository.com/artifact/org.projectlombok/lombok
+    //https://mvnrepository.com/artifact/org.projectlombok/lombok
     compile group: 'org.projectlombok', name: 'lombok', version: '0.11.0'
     // https://mvnrepository.com/artifact/commons-io/commons-io
     compile group: 'commons-io', name: 'commons-io', version: '2.4'
@@ -27,14 +27,12 @@ dependencies {
 
 }
 
-
-    test {
-        useTestNG() {
-            // runlist to executed. path is relative to current folder
-            suites 'src/test/java/testng.xml'
-        }
+test {
+    useTestNG() {
+        // runlist to executed. path is relative to current folder
+        suites 'src/test/java/testng.xml'
     }
-
+}
 
 // Resolve Maven dependencies as Maven does
 repositories {
