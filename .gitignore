@@ -7,7 +7,7 @@ src/test/java/com/comparator/
 src/test/java/com/practises/
 *.png
 *.html
-
+*.log
         
      
 
